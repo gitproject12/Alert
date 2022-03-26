@@ -14,6 +14,7 @@ public class AlertDetails {
 		driver.manage().window().maximize();
 		WebElement b=driver.findElement(By.id("promtButton"));
 		b.click();
+	    String text2 = b.getText();
 		
 		Alert al = driver.switchTo().alert();
 		
@@ -25,17 +26,10 @@ public class AlertDetails {
 		WebElement c= driver.findElement(By.id("promptResult"));
 		 String t=c.getText();
 		 System.out.println(t);
-		 if(john=text)
-			 
-				
-		
-		
+		 
 		
 	
-		
-		
 	
-		
-	}
 
+}
 }

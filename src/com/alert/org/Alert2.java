@@ -17,17 +17,19 @@ public class Alert2 {
 		WebElement c =driver.findElement(By.name("submit"));
 		c.click();
 		
-		
 		Alert al = driver.switchTo().alert();
 		String text = al.getText();
 		System.out.println(text);
-		Thread.sleep(5000);
+		Thread.sleep(2000);
 		al.accept();
+		
 		Alert al2 = driver.switchTo().alert();
 		String textq = al.getText();
 		System.out.println(textq);
 		Thread.sleep(2000);
 		al2.accept();
+		driver.quit();
+		
 		
 		
 		
